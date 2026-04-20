@@ -1,15 +1,15 @@
-package io.github.username.modid;
+package io.garden.hestia.omikuji;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ModId implements ModInitializer {
-	public static final String ID = "mod_id";
+public class Omikuji implements ModInitializer {
+	public static final String ID = "omikuji";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
 	@Override
 	public void onInitialize() {
-		//LOGGER.info("[Mod ID] pretty pink princess ponies prancing perpendicular");
+		//LOGGER.info("[omikuji] Good Fortune!");
 	}
 }
