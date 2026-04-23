@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_top",
+	"textures": {
+		"side": "omikuji:block/omikuji_box_side",
+		"top": "omikuji:block/omikuji_box_top"
+	}
+}
