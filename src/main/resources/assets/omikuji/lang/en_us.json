@@ -1,4 +1,16 @@
 {
-	"item.omikuji.omikuji_item": "Omikuji",
-	"block.omikuji.omikuji_box": "Omikuji Box"
+	"item.omikuji.omikuji": "Omikuji",
+	"block.omikuji.omikuji_box": "Omikuji Box",
+	"poetry.omikuji.leaves.0": "the leaves falls away",
+	"poetry.omikuji.leaves.1": "unexpected truths within",
+	"poetry.omikuji.leaves.2": "boughs laid to the bone",
+	"poetry.omikuji.cattle.0": "cattle find their way",
+	"poetry.omikuji.cattle.1": "valleys sinking cowprint hides",
+	"poetry.omikuji.cattle.2": "emerging again",
+	"poetry.omikuji.bell.0": "the morning bell rings",
+	"poetry.omikuji.bell.1": "motion set in set motion",
+	"poetry.omikuji.bell.2": "automata herd",
+	"poetry.omikuji.hearts.0": "hearts surpass the moon",
+	"poetry.omikuji.hearts.1": "sunset greeting the sunrise",
+	"poetry.omikuji.hearts.2": "fleeting feelings fall"
 }

@@ -12,11 +12,11 @@ import java.util.function.Function;
 
 public class OmikujiItems {
 
-	public static final Item OMIKUJI_ITEM = register("omikuji", OmikujiItem::new, new Item.Properties());
+	public static final Item OMIKUJI = register("omikuji", OmikujiItem::new, new Item.Properties().component(OmikujiComponents.OPENED, false).stacksTo(1));
 
 	public static void initialize() {
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
-			.register((creativeTab) -> creativeTab.accept(OMIKUJI_ITEM));
+			.register((creativeTab) -> creativeTab.accept(OMIKUJI));
 	}
 
 	public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {

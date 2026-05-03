@@ -1,0 +1,68 @@
+{
+	"type": "minecraft:block_interact",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune":{
+									"poetry": "leaves"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune":{
+									"poetry": "cattle"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune": {
+									"poetry": "bell"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune": {
+									"poetry": "hearts"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+	"random_sequence": "omikuji:offering/omikuji_box"
+}

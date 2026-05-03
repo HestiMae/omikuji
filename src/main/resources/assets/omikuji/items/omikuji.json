@@ -1,0 +1,16 @@
+{
+	"model": {
+		"type": "minecraft:condition",
+		"property": "minecraft:has_component",
+		"component": "omikuji:opened",
+		"ignore_default": true,
+		"on_true": {
+			"type": "minecraft:model",
+			"model": "omikuji:item/omikuji"
+		},
+		"on_false": {
+			"type": "minecraft:model",
+			"model": "omikuji:item/omikuji_closed"
+		}
+	}
+}

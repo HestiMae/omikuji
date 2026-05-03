@@ -1,6 +1,6 @@
 {
 	"model": {
 		"type": "minecraft:model",
-		"model": "omikuji:block/condensed_dirt"
+		"model": "omikuji:block/omikuji_box"
 	}
 }
