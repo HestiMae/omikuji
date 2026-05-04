@@ -10,7 +10,7 @@
 						{
 							"function": "set_components",
 							"components": {
-								"omikuji:fortune":{
+								"omikuji:fortune": {
 									"poetry": "leaves"
 								}
 							}
@@ -24,7 +24,7 @@
 						{
 							"function": "set_components",
 							"components": {
-								"omikuji:fortune":{
+								"omikuji:fortune": {
 									"poetry": "cattle"
 								}
 							}
@@ -54,6 +54,34 @@
 							"components": {
 								"omikuji:fortune": {
 									"poetry": "hearts"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune": {
+									"poetry": "chopsticks"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune": {
+									"poetry": "offer"
 								}
 							}
 						}
