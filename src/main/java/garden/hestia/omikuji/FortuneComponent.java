@@ -7,6 +7,8 @@ import net.minecraft.core.component.DataComponentGetter;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -24,6 +26,8 @@ public record FortuneComponent(String poetry) implements TooltipProvider {
 		Codec.STRING.fieldOf("poetry").forGetter(FortuneComponent::poetry)
 	).apply(builder, FortuneComponent::new));
 
+	public static final AttributeModifier extraHearts = new AttributeModifier(Omikuji.id("extra_hearts"), 2, AttributeModifier.Operation.ADD_VALUE);
+
 	public record Fortune(Component fortune, int lines, Consumer<Player> effect) {
 	}
 
@@ -33,7 +37,8 @@ public record FortuneComponent(String poetry) implements TooltipProvider {
 		"bell", new Fortune(Component.literal("凶").withStyle(ChatFormatting.DARK_RED), 3, p -> p.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 1800))),
 		"hearts", new Fortune(Component.literal("凶").withStyle(ChatFormatting.DARK_RED), 3, p -> p.addDeltaMovement(new Vec3(0, 10, 0))),
 		"chopsticks", new Fortune(Component.literal("小吉").withStyle(ChatFormatting.AQUA), 3, FortuneComponent::shuffle),
-		"offer", new Fortune(Component.literal("末吉").withStyle(ChatFormatting.LIGHT_PURPLE), 3, p -> p.addItem(Items.TOTEM_OF_UNDYING.getDefaultInstance().copy()))
+		"offer", new Fortune(Component.literal("末吉").withStyle(ChatFormatting.LIGHT_PURPLE), 3, p -> p.addItem(Items.TOTEM_OF_UNDYING.getDefaultInstance().copy())),
+		"fire", new Fortune(Component.literal("大吉").withStyle(ChatFormatting.GOLD), 3, p -> p.getAttribute(Attributes.MAX_HEALTH).addOrUpdateTransientModifier(extraHearts))
 	);
 
 	@Override

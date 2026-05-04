@@ -87,6 +87,20 @@
 						}
 					],
 					"name": "omikuji:omikuji"
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"omikuji:fortune": {
+									"poetry": "fire"
+								}
+							}
+						}
+					],
+					"name": "omikuji:omikuji"
 				}
 			],
 			"rolls": 1.0
